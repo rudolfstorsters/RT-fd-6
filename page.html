@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- TODO
+  -fix res. d
+  -add favicon
+  -change remember me to terms&&... -->
+ 
+  
+<title>Page Title</title>
+<link rel="PH.png" type="image/png" href=”PH.png”/>
+
+<style>
+
+
+html, body{
+    display: flex;
+    background-color: #f5f5f5;
+    
+  }
+
+  div {
+ 
+  padding: 18px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  width: 49vw;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+
+}
+img {
+  width: 40vw;
+}
+.paragraphCard{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  justify-self: center;
+  margin: 30px 30px;;
+  
+}
+table, th, td {
+  border: 1px solid black;
+  width: 50vw;;
+}
+tr:hover{
+  background-color: aqua;
+  
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+  <div class="site-wrap">
+
+    <div class="paragraphCard">
+     
+    <section>
+      <h1 >Scroll on down</h1>
+      <p>Consectetur adipisicing elit.<a target="_blank" href="https://google.com ">random link </a> Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor
+        at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
+        pariaturlores sunt esse magni, ut, dignissimos.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt facilis et iste corrupti omnis tenetur est.
+        Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis earum provident error molestias. Ratione magni illo
+        sint vel velit ut excepturi consectetur suscipit, earum modi <a target="_blank" href="https://google.com ">random link </a>accusamus voluptatem nostrum, praesentium numquam, reiciendis
+        voluptas sit id quisquam. Consequatur in quis reprehenderit modi perspiciatis necessitatibus saepe, quidem, suscipit iure
+        natus dignissimos ipsam, eligendi deleniti accusantium, rerum quibusdam fugit perferendis et optio recusandae sed ratione.
+        Culpa, dolorum reprehenderit harum ab voluptas fuga, nisi eligendi natus maiores illum quas quos et aperiam aut doloremque
+        optio maxime fugiat doloribus. Eum dolorum expedita quam,<a target="_blank" href="https://google.com ">random link </a> nesciunt</p>
+      <p>Lorem ipsum cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+        omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+        ut, dignissimos.</p>
+      <p>Adipisicing elit. Tempore tempora rerum.</p>
+    </section>
+  <a target="_blank" href="https://google.com ">
+    <img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
+  </a>
+  </div>
+  <table>
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>w</td>
+      <td>e</td>
+    </tr>
+    <tr>
+      <td><a target="_blank" href="https://google.com ">random link </a></td>
+      <td>s</td>
+      <td>d</td>
+    </tr>
+  </table>
+  <div classname="firstParagraph"></div>
+  <div class="paragraphCard">
+    <img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
+    <section>
+      <h1>Character splitting</h1>
+      <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,<a target="_blank" href="https://google.com ">random link </a> corporis a qui libero ipsum delectus quidem dolor
+        at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
+        pariaturlores sunt esse magni, ut, dignissimos.</p>
+      <p>Lorem ipsum tempora in cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+        omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+        ut, dignissimos. Adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariaturlores
+        sunt esse magni.
+    </div>
+    <div class="paragraphCard">
+      
+    <section>
+      <h1>Character splitting</h1>
+      <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor
+        at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
+        pariaturlores sunt esse magni, ut, dignissimos.</p>
+      <p>Lorem ipsum tempora in cupiditate, corporis a qui libero<a target="_blank" href="https://google.com ">random link </a> ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+        omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+        ut, dignissimos. Adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariaturlores
+        sunt esse magni. Tempore tempora rerum, est autem cupiditate, corporis a qui libero.</p>
+    </section>
+    <img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
+    </div>
+    <div class="paragraphCard">
+      <img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
+    <section>
+      <h1>Colors changing</h1>
+      <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem
+        dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora
+        in aspernatur pariaturlores sunt esse magni, ut, dignissimos.</p>
+      <p>Lorem ipsum cupiditate, corporis a qui libero <a target="_blank" href="https://google.com ">random link </a>ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+        omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+        ut, dignissimos.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt facilis et iste corrupti omnis tenetur est.
+        Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis earum provident error molestias. Ratione magni illo
+        sint vel velit ut excepturi consectetur suscipit, earum modi accusamus voluptatem nostrum, praesentium numquam, reiciendis
+        voluptas sit id quisquam. Consequatur in quis <a href="index.html">random link </a>reprehenderit modi perspiciatis necessitatibus saepe, quidem, suscipit
+        iure natus dignissimos ipsam, eligendi deleniti accusantium, rerum quibusdam fugit perferendis et optio recusandae sed
+        ratione. Culpa, dolorum reprehenderit harum ab voluptas fuga, nisi eligendi natus maiores illum quas quos et aperiam
+        aut doloremque optio maxime fugiat doloribus. Eum dolorum expedita quam, nesciunt</p>
+      <p>Adipisicing elit. Tempore tempora rerum.</p>
+    </section>
+    </div>
+    <div class="paragraphCard">
+    <section>
+      <h1>The end</h1>
+      <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem
+        dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora
+        in aspernatur pariaturlores sunt esse magni, ut, dignissimos.</p>
+      <p>Adipisicing elit. Tempore tempora rerum.</p>
+      <p>Lorem ipsum cupiditate, corporis a qui libero ipsum tempora in delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+        omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam tempora in dolores sunt esse magni,
+        ut, dignissimos.</p>
+    </section>
+    <a><img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/></a>
+    </div>
+   
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </div>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</body>
+</html>
