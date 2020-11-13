@@ -12,11 +12,23 @@
     document.body.style.background = bgColor;
     }
 
+   function showIframe() {
+     
+     //Get the iframe
+    var myIframe = document.getElementById("myiframe");
+    if (myIframe.style.display == "none"){
+      myIframe.style.display = "block"
+    }else {
+      myIframe.style.display = "none"
+    }
+    
+   };
+
   </script>
    <!-- kas atbild par to, kas seko pēc linka: "https://fast.com/(š/o/?›)" ????  post || get  -->
   
   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-<title>Mājas darbs</title>
+<title>Majas darbs</title>
 
 <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/710/115/png-clipart-computer-icons-favicon-science-iconfinder-free-science-icon-text-logo.png" />
 <style>
@@ -25,8 +37,6 @@
     display: flex;
     margin-left: 18vw;
     font-family: 'Sofia';font-size: 22px;
-    
-    
   }
 
   form{
@@ -35,9 +45,8 @@
     height: auto;
     justify-content: center;
     background-color: #f5f5f5;
-    padding: 20px 50px;
+    padding: 50px 70px;
     position: absolute;
-    
   }
 
   input[type=text], input[type=password]{
@@ -47,7 +56,6 @@
     display: inline-block;
     border: 1px solid #777;
     box-sizing: border-box;
-    
   }
 
   button{
@@ -75,15 +83,17 @@
   .container{
     padding: 10px ;
     text-align: left;
-    
   }
 
   select{
    align-self: right;
-   
   }
-  
-  
+
+  @media only screen and (max-width: 600px) {
+  html, body {
+    margin:none;
+    }
+  }
   
 </style>
 </head>
@@ -112,26 +122,33 @@
   </label>
   <input type="password" placeholder="Enter Password" name="pass" required>
 </div>
+
 <div class="container">
+  
+       
+    <p><input type="checkbox" name="terms" required> 
+     <label style="user-select: none;"> I accept the 
+      <a onclick="showIframe()" href ="#">
+        Terms and Conditions 
+      </a></label>
+      
+      <iframe src="page.html" id="myiframe" style="display: none;">
+      </iframe></p>
+  
+   
+
+    
 <button type="submit"><b>SIGN UP</b>
 </button>
+
+
 
   <div class="container">
     <label style="padding-left: 15px; user-select: none;">
       <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
 
-      <select name="select" size="">
-        <option>
-          ENG
-        </option>
-        <option>
-        LV
-        </option>
-        <option>
-          RU
-        </option>
-      </select>
+      
     </div>
   </div>
 </div>
