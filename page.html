@@ -47,7 +47,8 @@ img {
   flex-direction: row;
   flex:1;
   justify-self: center;
-  margin: 30px 30px;;
+  margin: 30px 130px;
+
   
 }
 table, th, td {
@@ -74,10 +75,35 @@ tr:hover{
   padding: 15px;
   border-radius: 4px;
 }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+.navbar a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-left: 3px solid transparent;
+}
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  border-left: 3px solid red;
+}
 
 #myBtn:hover {
   background-color: #555;
 }
+
 </style>
 </head>
 <body>
@@ -86,7 +112,7 @@ tr:hover{
     <div class="paragraphCard">
      
     <section>
-      <h1 >Scroll on down</h1>
+      <h1 id="firstID">Scroll on down</h1>
       <p>Consectetur adipisicing elit.<a target="_blank" href="https://google.com ">random link </a> Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor
         at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
         pariaturlores sunt esse magni, ut, dignissimos.</p>
@@ -102,8 +128,27 @@ tr:hover{
         ut, dignissimos.</p>
       <p>Adipisicing elit. Tempore tempora rerum.</p>
     </section>
+
+
   <a target="_blank" href="https://google.com ">
-    <img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
+    <div class="navbar" >
+      <nav class="main-nav">
+        <ul>
+          <li class="active"><a href="#firstID"> Scroll on down</a></li>
+          <li><a href="#secondID" >Character litting</a></li>
+          <li><a href="#thirdID" >Character splitting</a></li>
+          <li>
+            <a href="#thirdID" >Character splitting</a>
+          </li>
+          <li>
+            <a href="#lastID" >The End</a>
+          </li>
+        </ul>
+        <i class="active-marker"></i>
+      </nav>
+  
+  </div> 
+    
   </a>
   </div>
   <table>
@@ -123,11 +168,11 @@ tr:hover{
       <td>d</td>
     </tr>
   </table>
-  <div classname="firstParagraph"></div>
+  <div classname="firstParagraph" ></div>
   <div class="paragraphCard">
     <img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
     <section>
-      <h1>Character splitting</h1>
+      <h1 id="secondID">Character litting</h1>
       <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,<a target="_blank" href="https://google.com ">random link </a> corporis a qui libero ipsum delectus quidem dolor
         at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
         pariaturlores sunt esse magni, ut, dignissimos.</p>
@@ -139,7 +184,7 @@ tr:hover{
     <div class="paragraphCard">
       
     <section>
-      <h1>Character splitting</h1>
+      <h1 id="thirdID">Character splitting</h1>
       <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor
         at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
         pariaturlores sunt esse magni, ut, dignissimos.</p>
@@ -153,7 +198,7 @@ tr:hover{
     <div class="paragraphCard">
       <img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
     <section>
-      <h1>Colors changing</h1>
+      <h1 id="fourthID">Colors changing</h1>
       <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem
         dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora
         in aspernatur pariaturlores sunt esse magni, ut, dignissimos.</p>
@@ -172,7 +217,7 @@ tr:hover{
     </div>
     <div class="paragraphCard">
     <section>
-      <h1>The end</h1>
+      <h1 id="lastID">The end</h1>
       <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem
         dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora
         in aspernatur pariaturlores sunt esse magni, ut, dignissimos.</p>

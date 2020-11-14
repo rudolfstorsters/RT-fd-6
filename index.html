@@ -3,7 +3,7 @@
 <head>
   <script>
     function random_bg_color() {
-    var x = Math.floor(Math.random() * 206);
+    var x = Math.floor(Math.random() * 186);
     var y = Math.floor(Math.random() * 176);
     var z = Math.floor(Math.random() * 156);
     var bgColor = "rgb(" + x + "," + y + "," + z + ")";
@@ -88,6 +88,12 @@
   select{
    align-self: right;
   }
+  #myiframe{
+    
+    width: 100%;
+    height: auto;
+
+  }
 
   @media only screen and (max-width: 600px) {
   html, body {
@@ -125,30 +131,25 @@
 
 <div class="container">
   
-       
-    <p><input type="checkbox" name="terms" required> 
-     <label style="user-select: none;"> I accept the 
+    <p>
+     <label style="user-select: none; padding-left: 15px;">
+      <input type="checkbox" name="terms" required> 
+       I accept the
+      </label>
       <a onclick="showIframe()" href ="#">
         Terms and Conditions 
-      </a></label>
+      </a>
       
       <iframe src="page.html" id="myiframe" style="display: none;">
       </iframe></p>
   
-   
-
-    
 <button type="submit"><b>SIGN UP</b>
 </button>
-
-
 
   <div class="container">
     <label style="padding-left: 15px; user-select: none;">
       <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-
-      
+      </label> 
     </div>
   </div>
 </div>
