@@ -2,23 +2,28 @@
 <html>
 <head>
   <!-- TODO
- fix iframe
+    -make array for navigation ID
+    -myFunction and topFunction wont work 
+    -fix iframe (res)
+    -fix progress-bar
+    -responive design
  -->
  
   
-<title>Page Title</title>
+<title>Page </title>
 <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/710/115/png-clipart-computer-icons-favicon-science-iconfinder-free-science-icon-text-logo.png" />
 <style>
 
 html, body{
     display: flex;
-    background-color: #f5f5f5;
-    
+    background-color: #f5f5f5;  
+    width: auto;
+   
   }
 
-  div {
- 
-  padding: 18px;
+   ul {
+list-style: none;
+padding-left: 0;
 }
 
 h1 {
@@ -31,30 +36,47 @@ p {
   text-indent: 50px;
   text-align: justify;
   letter-spacing: 3px;
-  width: 49vw;
+  width: 44vw;
+  margin: 8px;
 }
 
 a {
   text-decoration: none;
   color: red;
+}
 
-}
 img {
-  width: 40vw;
+  width: auto;
+  height: auto;
 }
+section{
+  padding:15px;
+}
+
 .paragraphCard{
   display: flex;
   flex-direction: row;
-  flex:1;
+  flex: 1;
   justify-self: center;
-  margin: 30px 130px;
-
-  
+  width: 100%;
+  overflow: none;
+  margin: 0; 
 }
+
+.site-wrap{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: none;
+}
+
 table, th, td {
   border: 1px solid black;
-  width: 50vw;;
+  width: 70vw;
+  padding: 3px;
 }
+
 tr:hover{
   background-color: aqua;
   
@@ -74,7 +96,9 @@ tr:hover{
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  
 }
+
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -82,98 +106,126 @@ tr:hover{
   right: 0;
   top: 0;
   height: 100%;
-  width: auto;
+  width: 14vw;
 }
+
 .navbar a {
   float: center;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 0px 16px;
+  margin-top:5px;
+  padding: 13px;
   text-decoration: none;
   font-size: 17px;
   border-left: 3px solid transparent;
+  width: 100%;
+  left: 0;
 }
+
 .navbar a:hover {
   background: #ddd;
   color: black;
-  border-left: 3px solid red;
+  
 }
 
 #myBtn:hover {
   background-color: #555;
 }
 
+.progress-container {
+  height: 100%;
+  width: 4px;
+  top:0px;
+  margin-left: 5px; 
+}
+
+.progress-bar {
+  width: 8px;
+  background: #4caf50;
+  height: 0%;
+  left: 5px;
+}
+
+
+
 </style>
 </head>
-<body>
-  <div class="site-wrap">
 
-    <div class="paragraphCard">
+<body>
+  <div class ="paragraphCard"> 
+  <nav class="navbar paragraphCard" >
+      
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
      
+    </div> 
+      <ul>
+        <li class="active"><a href="#firstID"> Scroll on down</a></li>
+        <li><a href="#secondID" >Character litting</a></li>
+        <li><a href="#thirdID" >Character splitting</a></li>
+        <li>
+          <a href="#fourthID" >Colors changing</a>
+        </li>
+        <li>
+          <a href="#lastID" >The End</a>
+        </li>
+      </ul>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    </nav> 
+   
+  </div>
+  <div class="site-wrap">
+    
+    <div class="paragraphCard">
+     <br>
+    
     <section>
       <h1 id="firstID">Scroll on down</h1>
-      <p>Consectetur adipisicing elit.<a target="_blank" href="https://google.com ">random link </a> Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor
+      <p>Consectetur adipisicing elit. <a target="_blank" href="https://google.com "> random link </a> Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor
         at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
         pariaturlores sunt esse magni, ut, dignissimos.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt facilis et iste corrupti omnis tenetur est.
         Iste ut est dicta dolor itaque adipisci, dolorum minima, veritatis earum provident error molestias. Ratione magni illo
-        sint vel velit ut excepturi consectetur suscipit, earum modi <a target="_blank" href="https://google.com ">random link </a>accusamus voluptatem nostrum, praesentium numquam, reiciendis
+        sint vel velit ut excepturi consectetur suscipit, earum modi <a target="_blank" href="https://google.com ">random link </a> accusamus voluptatem nostrum, praesentium numquam, reiciendis
         voluptas sit id quisquam. Consequatur in quis reprehenderit modi perspiciatis necessitatibus saepe, quidem, suscipit iure
         natus dignissimos ipsam, eligendi deleniti accusantium, rerum quibusdam fugit perferendis et optio recusandae sed ratione.
         Culpa, dolorum reprehenderit harum ab voluptas fuga, nisi eligendi natus maiores illum quas quos et aperiam aut doloremque
-        optio maxime fugiat doloribus. Eum dolorum expedita quam,<a target="_blank" href="https://google.com ">random link </a> nesciunt</p>
+        optio maxime fugiat doloribus. Eum dolorum expedita quam, <a target="_blank" href="https://google.com ">random link </a> nesciunt</p>
       <p>Lorem ipsum cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
         omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
         ut, dignissimos.</p>
       <p>Adipisicing elit. Tempore tempora rerum.</p>
     </section>
-
-
-  <a target="_blank" href="https://google.com ">
-    <div class="navbar" >
-      <nav class="main-nav">
-        <ul>
-          <li class="active"><a href="#firstID"> Scroll on down</a></li>
-          <li><a href="#secondID" >Character litting</a></li>
-          <li><a href="#thirdID" >Character splitting</a></li>
-          <li>
-            <a href="#thirdID" >Character splitting</a>
-          </li>
-          <li>
-            <a href="#lastID" >The End</a>
-          </li>
-        </ul>
-        <i class="active-marker"></i>
-      </nav>
-  
-  </div> 
-    
+    <a target="_blank" href="https://google.com ">
+    <img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
   </a>
   </div>
+<br />
   <table>
     <tr>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
+      <th>Tempore tempora rerum</th>
+      <th>Tempore tempora rerum</th>
+      <th>Lorem ipsum cupiditate</th>
     </tr>
     <tr>
-      <td>q</td>
-      <td>w</td>
-      <td>e</td>
+      <td>Lorem ipsum cupiditate Lorem ipsum cupiditate</td>
+      <td>Tempore tempora rerum Tempore tempora rerum</td>
+      <td>Tempore tempora rerum</td>
     </tr>
     <tr>
       <td><a target="_blank" href="https://google.com ">random link </a></td>
-      <td>s</td>
-      <td>d</td>
+      <td>Tempore tempora rerum Tempore tempora rerum</td>
+      <td>Tempore tempora rerum Tempore tempora rerum</td>
     </tr>
   </table>
-  <div classname="firstParagraph" ></div>
+
   <div class="paragraphCard">
     <img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
     <section>
       <h1 id="secondID">Character litting</h1>
-      <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate,<a target="_blank" href="https://google.com ">random link </a> corporis a qui libero ipsum delectus quidem dolor
+      <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, <a target="_blank" href="https://google.com ">random link </a> corporis a qui libero ipsum delectus quidem dolor
         at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
         pariaturlores sunt esse magni, ut, dignissimos.</p>
       <p>Lorem ipsum tempora in cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
@@ -188,7 +240,7 @@ tr:hover{
       <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor
         at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
         pariaturlores sunt esse magni, ut, dignissimos.</p>
-      <p>Lorem ipsum tempora in cupiditate, corporis a qui libero<a target="_blank" href="https://google.com ">random link </a> ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+      <p>Lorem ipsum tempora in cupiditate, corporis a qui libero <a target="_blank" href="https://google.com ">random link </a> ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
         omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
         ut, dignissimos. Adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariaturlores
         sunt esse magni. Tempore tempora rerum, est autem cupiditate, corporis a qui libero.</p>
@@ -202,7 +254,7 @@ tr:hover{
       <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem
         dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora
         in aspernatur pariaturlores sunt esse magni, ut, dignissimos.</p>
-      <p>Lorem ipsum cupiditate, corporis a qui libero <a target="_blank" href="https://google.com ">random link </a>ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+      <p>Lorem ipsum cupiditate, corporis a qui libero <a target="_blank" href="https://google.com ">random link </a> ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
         omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
         ut, dignissimos.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, deserunt facilis et iste corrupti omnis tenetur est.
@@ -229,15 +281,16 @@ tr:hover{
     <a><img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/></a>
     </div>
    
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
   </div>
   <script>
     //Get the button
     var mybutton = document.getElementById("myBtn");
     
+    
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function() {scrollFunction()};
-    
+     
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
@@ -251,6 +304,15 @@ tr:hover{
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+    // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height  = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 37.5;
+  document.getElementById("myBar").style.height = scrolled + "%";
+}
     </script>
 </body>
 </html>
