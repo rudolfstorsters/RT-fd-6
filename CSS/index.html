@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>CSS majas darbs</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    
+  function update(e){
+    var x = e.clientX || e.touches[0].clientX
+    var y = e.clientY || e.touches[0].clientY
+    document.body.style.setProperty('--cursorX', x + 'px')
+    document.body.style.setProperty('--cursorY', y + 'px')
+  }
+
+document.addEventListener('mousemove',update)
+document.addEventListener('touchmove',update)
+
+function toggleFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+
+    </script>
+</head>
+<body class="stage">
+  
+    <button onclick="toggleFunction()">Toggle dark mode</button>
+
+<div class="paragraphCard">
+  
+  <section>
+    <h1 >CSS</h1>
+    <p>Consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, <a target="_blank" href="https://google.com ">random link </a> corporis a qui libero ipsum delectus quidem dolor
+      at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur
+      pariaturlores sunt esse magni, ut, dignissimos.</p>
+    <p>Lorem ipsum tempora in cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores
+      omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni,
+      ut, dignissimos. Adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariaturlores
+      sunt esse magni.</p>
+  
+</section>
+<img src="https://io.webskola.lv/uploads/home_img_673ce05243.svg"/>
+</div>
+
+</body>
+
+</html>
