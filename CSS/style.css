@@ -2,6 +2,13 @@ h1{
   color: red;
 }
 
+.noIdea-mode *{
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+ }
+ 
+
 body {
   top: 0;
   left: 0;
@@ -13,7 +20,7 @@ body {
 }
 .stage {
   animation: animateBg 10s linear infinite;
-  background-image: linear-gradient(0deg,#cf5c5c,#c19b4a,#c6ee4a,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
+  background-image: linear-gradient(0deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
   background-size: 100% 1100%;
   height: 100vw;
   width: 100vw;
@@ -30,15 +37,17 @@ body {
   justify-self: center;
   width: 100%;
   overflow: none;
-  margin: 0; 
+ 
+  
 }
 h1 { 
   color: black; 
   font-family: 'Droid serif', serif; 
   font-size: 36px; font-weight: 400; 
   font-style: italic; line-height: 44px; 
-  margin: 0 0 12px; 
+  margin: 5% 0 12px; 
   text-align: center;
+  
  }
 
 p {
@@ -46,41 +55,15 @@ p {
     font-family: 'Droid Sans', sans-serif; 
     font-size: 15px; font-weight: 400;
     line-height: 24px;
-    margin: 0 0 14px;
+    margin: 5% 10%;
+    column-count: 2;
+    min-width: 400px;;
+    background-color: #282c34;
+    padding: 30px;
   }
 
-a { 
-  color: white; 
-  text-decoration: none; 
-  border-bottom: 1px solid #4c3a07;
- }
 
-a:hover {
-   color: #fff; 
-   background: #b48608; 
-  }
 
-a.btn { 
-  font-family: 'Droid serif', serif; 
-  background: black; padding: 4px 7px; 
-  color: #000; text-decoration: none; 
-  margin: 0 auto; 
-  width: 100%; 
-  width: 120px; margin: 0 auto; 
-  display: block; 
-  text-align: center; 
-  font-style: italic; 
-}
-
-a.btn:hover { 
-  color: #000; 
-  background: #fff; 
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
 
 .dark-mode {
   cursor: none;
@@ -100,6 +83,70 @@ a.btn:hover {
     rgba(0,0,0,.5) 80%,
     rgba(0,0,0,.95) 100%
   )
+}
+.text-color{
+  color: purple;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+.glow {
+  font-size: auto;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #888, 0 0 40px #888, 0 0 50px #888, 0 0 60px #888, 0 0 70px #888;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #666, 0 0 40px #666, 0 0 50px #666, 0 0 60px #666, 0 0 70px #666, 0 0 80px #666;
+  }
 }
 
 
