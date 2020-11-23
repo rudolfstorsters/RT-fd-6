@@ -1,6 +1,4 @@
-h1{
-  color: red;
-}
+
 
 .noIdea-mode *{
   background: #000 !important;
@@ -38,16 +36,16 @@ body {
   width: 100%;
   overflow: none;
  
-  
 }
 h1 { 
   color: black; 
   font-family: 'Droid serif', serif; 
   font-size: 36px; font-weight: 400; 
   font-style: italic; line-height: 44px; 
-  margin: 5% 0 12px; 
+  margin: 5% 0 5% 0; 
   text-align: center;
-  
+  background-color: #333333;
+
  }
 
 p {
@@ -61,8 +59,6 @@ p {
     background-color: #282c34;
     padding: 30px;
   }
-
-
 
 
 .dark-mode {
