@@ -1,12 +1,10 @@
 
-
 .noIdea-mode *{
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
  }
  
-
 body {
   top: 0;
   left: 0;
@@ -22,6 +20,7 @@ body {
   background-size: 100% 1100%;
   height: 100vw;
   width: 100vw;
+  
 }
 @keyframes animateBg {
   0% { background-position: 0% 0%; }
@@ -35,8 +34,8 @@ body {
   justify-self: center;
   width: 100%;
   overflow: none;
- 
 }
+
 h1 { 
   color: black; 
   font-family: 'Droid serif', serif; 
@@ -45,7 +44,6 @@ h1 {
   margin: 5% 0 5% 0; 
   text-align: center;
   background-color: #333333;
-
  }
 
 p {
@@ -60,7 +58,6 @@ p {
     padding: 30px;
   }
 
-
 .dark-mode {
   cursor: none;
   --cursorX: 50vw;
@@ -68,6 +65,7 @@ p {
 }
 .dark-mode:before {
   content: '';
+  
   display: block;
   width: 100vw;
   height: 100vw;
@@ -92,8 +90,6 @@ p {
   width: 100%;
   padding: 15px;
 }
-
-
 
 .navbar a:hover {
   background: #ddd;
