@@ -3,17 +3,22 @@
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
+  
  }
  
 body {
-  top: 0;
-  left: 0;
+  
   margin: 0;
-  top: 0;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
   background-color: white;
   color: black;
   font-size: 25px;
+  font-family: Arial;
+  overflow: auto;
+  
 }
+
+
 .stage {
   animation: animateBg 10s linear infinite;
   background-image: linear-gradient(0deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
@@ -38,9 +43,9 @@ body {
 
 h1 { 
   color: black; 
-  font-family: 'Droid serif', serif; 
+  font-family: Arial;
   font-size: 36px; font-weight: 400; 
-  font-style: italic; line-height: 44px; 
+  width: 100vw;
   margin: 5% 0 5% 0; 
   text-align: center;
   background-color: #333333;
@@ -48,9 +53,9 @@ h1 {
 
 p {
    color: #eee;
-    font-family: 'Droid Sans', sans-serif; 
+   font-family: Arial;
     font-size: 15px; font-weight: 400;
-    line-height: 24px;
+    line-height: 150%;
     margin: 5% 10%;
     column-count: 2;
     min-width: 400px;;
@@ -89,6 +94,7 @@ p {
   top: 0;
   width: 100%;
   padding: 15px;
+  z-index: 99;
 }
 
 .navbar a:hover {
@@ -131,6 +137,105 @@ p {
   background-color: #555;
 }
 
+.box {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  margin: 30px;
+}
+
+.box::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  box-shadow: 4px 4px red;
+  z-index: 0;
+}
+
+.box:hover::after {
+    opacity: 1;
+    box-shadow: 5px 5px red;
+}
+
+.imgContainer{
+  
+    display: flex;
+    justify-content:  center;
+    flex: 1;
+    flex-direction: row;
+    margin: 20px;
+    
+  
+}
+
+.box:nth-child(2n+1){
+  background-color: #0f0;
+
+}
+
+@media screen and (max-width: 500px) {
+  .box {
+    display: flex;
+    justify-content:  center;
+    flex: 1;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .paragraphCard{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-self: center;
+    width: 100%;
+    overflow: none;
+  }
+
+  p {
+    color: #eee;
+    font-family: Arial;
+     font-size: 15px; font-weight: 400;
+     line-height: 150%;
+     column-count: 2;
+     min-width: 400px;;
+     background-color: #282c34;
+     padding: 30px;
+     overflow: none;
+   }
+
+   .imgContainer{
+  
+    display: flex;
+    justify-content:  center;
+    flex: 1;
+    flex-direction: column;
+    
+    width: 100vw;
+    height: auto;
+    
+}
+
+}
 @keyframes glow {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #888, 0 0 40px #888, 0 0 50px #888, 0 0 60px #888, 0 0 70px #888;
