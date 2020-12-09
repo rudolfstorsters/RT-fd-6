@@ -29,11 +29,6 @@
      }
  })
 
- 
-    
- 
- 
- 
 function sizeFunction(){
  const all  = document.getElementsByTagName("div")
  
@@ -59,12 +54,6 @@ for (var i = 0, max = all.length; i < max; i++) {
 
 const arrLength = all.length;
 
-
-
-
-
-   
-
 }
 
 function displayWindowSize(){
@@ -73,7 +62,7 @@ function displayWindowSize(){
     //var h = document.documentElement.offsetHeight;
     
     
-    // Display result inside a div element
+   
     document.getElementById("result").innerHTML = "W = "+ w  ;
 }
  
