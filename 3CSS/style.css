@@ -304,9 +304,9 @@ footer{
     .logo {
         background-image: url("resources/webskola logo.png");
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: 100% 100%;
         min-height: 38.75px;
-        width: 60.07px;
+        width: 248px;
         justify-content: center;
         align-items: center;
         display: block;
@@ -341,7 +341,7 @@ footer{
     }
 
     .itemContainer {
-        margin: 3%;
+        margin: 1%;
         min-width: 242px;
         position: relative;
         background-color: #f9f9f9;
@@ -404,6 +404,10 @@ footer{
             
           
           
+    }
+    .footerStyle{
+        left: 0;
+        text-align: left;
     }
 
 
@@ -548,7 +552,7 @@ footer{
         min-width: 30px;
         min-height: 30px;
         justify-self: center;
-        margin: 10px 0 0 0;
+        
         
     }
 
