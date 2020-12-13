@@ -15,8 +15,10 @@
 
             </div>
         </a>
+        
         <a href="#">Sākumlapa</a>
         <a href="#" onclick="noIdeaModeFunction()"><b>webskola.lv</b></a>
+       
     </nav>
     <aside>
        
@@ -46,7 +48,7 @@
                 <p class="price">
                     20 €
                 </p>
-                <button>Pieteikties</button>
+                <button class="sectionButton">Pieteikties</button>
 
             </div>
 
@@ -57,7 +59,7 @@
                 <p class="price">
                     50 €
                 </p>
-                <button>Pieteikties</button>
+                <button class="sectionButton">Pieteikties</button>
 
             </div>
 
@@ -68,7 +70,7 @@
                 <p class="price">
                     80 €
                 </p>
-                <button>Pieteikties</button>
+                <button class="sectionButton">Pieteikties</button>
 
             </div>
         </div>
@@ -76,17 +78,22 @@
     </section>
 
   <form>
-      <p>
+      <p class='formTextDecoration'>
           Sazinies ar mums!
       </p>
       <input type="name" placeholder="Jūsu vārds" name="name">
       <input type="email" placeholder="Jūsu epasts" name="email">
-      <input type="texr" placeholder="Jūsu ziņojums" name="email">
-<button type="submit" >Sūtīt</button>
+      <input type="text" placeholder="Jūsu ziņojums" name="email">
+<input type="button" value='Sūtīt' >
   </form>
 
     <footer>
+        <div class="footerStyle"> 
 <p>Copyright 2020</p>
+</div>
+
+<button id="myBtn" onclick="topFunction()" ></button>
+
     </footer>
 </body>
 <script src="app.js">

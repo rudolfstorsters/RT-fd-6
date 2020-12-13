@@ -257,5 +257,8 @@
             transition: none;
             
         }
-        
+        .asideAnimation:hover{
+            width: calc(70vw - 350px);
+            
+        }
     }
