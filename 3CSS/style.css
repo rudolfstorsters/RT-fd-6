@@ -285,7 +285,7 @@ input[type=submit] {
     border: none;
 }
 
-input[type=text] {
+input[type=textarea] {
     height: 90px;
     -webkit-box-pack: top;
     -ms-flex-pack: top;
@@ -488,7 +488,7 @@ footer {
         padding: 0 0 0 15px;
         border: none;
     }
-    input[type=text] {
+    input[type=textarea] {
         height: 90px;
         -webkit-box-pack: top;
         -ms-flex-pack: top;
@@ -648,13 +648,14 @@ footer {
         padding: 0 0 0 15px;
         border: none;
     }
-    input[type=text] {
+    input[type=textarea] {
         height: 90px;
         -webkit-box-pack: top;
         -ms-flex-pack: top;
         align-self: top;
         text-align: top;
-       top: 0 !important;
+     vertical-align: top;
+       
       
 
        
