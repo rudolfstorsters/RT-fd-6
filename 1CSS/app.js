@@ -1,12 +1,9 @@
-function noIdeaModeFunction() {
-    var element = document.body;
-    element.classList.toggle("noIdea-mode");
-}
+
 
 function countFunction() {
     var count = document.getElementById("myList").childElementCount;
     document.getElementById("demo").innerHTML = count;
-    if (count == 7) {
+    if (count == 9) {
 
         var count = document.createElement("P");
         count.innerHTML = "list is full";
@@ -19,7 +16,7 @@ function countFunction() {
 
 function addFunction() {
     var newNode = document.createElement("li");
-    var textnode = document.createTextNode("Water");
+    var textnode = document.createTextNode("New Child");
     newNode.appendChild(textnode);
     document.getElementById("myList").appendChild(newNode);
 }
