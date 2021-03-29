@@ -3,8 +3,17 @@ body {
     min-width: 250px;
     background-color: #444;
     color: wheat;
-    padding: 0 5%;
+   
+    justify-items: center;
+   
   }
+
+  section{
+    min-width: 400px;
+    max-width: 600px;
+    justify-content: space-around;
+  }
+  
   
   /* Include the padding and border in an element's total width and height */
   
@@ -13,6 +22,7 @@ body {
   ul {
     margin: 10;
     padding: 10;
+    
   }
   
   /* Style the list items */
@@ -65,10 +75,18 @@ body {
   
   /* Style the close button */
   .close {
+   
+    background-color: transparent;
+    right: 50%;
     position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
+    border: none;
+    font-size: 100%;
+    
+    width: 100px;
+    color: white;
+    
+    
+
   }
   
   .close:hover {
@@ -120,21 +138,15 @@ body {
     background-color: #bbb;
   }
 
-  .close {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    padding: 12px 16px;
-    transform: translate(0%, -50%);
-  }
+
   
   .close:hover {background: #bbb;}
 
   .itemContainer{
-    width: 100vw;
+    width: 100%;
     left: 0px;
     padding: 15px;
+    justify-items: space-between;
   }
   .itemContainer :nth-child(2n+ 2){
     background-color: #1f2324;
@@ -147,11 +159,13 @@ body {
 
   .itemContainer :nth-child(2n + 2){
     background-color: transparent;
-    right: 5%;
+    
+    display: flex;
     position: absolute;
     border: none;
     font-size: 100%;
-    width: auto;
+    justify-items: space-between;
+   
     color: white;
     
    
@@ -170,6 +184,42 @@ body {
 
   input :focus{
     border-color: green
+  }
+
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    min-height: 40px;
+    cursor: pointer;
+    min-width: 200px;
+  }
+
+  .utilCOnatiner{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 10%;
+  }
+
+  #myInput{
+    width: 400px;
+    left: -100%;
+    position: relative;
+    left: -100px
+  }
+  .inner{
+    min-width: 350px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 10% 10%;
+    justify-content: center;
+    align-items: center;
   }
 
   
