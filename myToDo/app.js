@@ -19,10 +19,11 @@ function render() {
           onclick="completeItem(${index})"
           style="${listItem.isComplete ? 'text-decoration: line-through; color: lightgrey;' : ''}">
           ${listItem.title}
+          
         </span>
-        <button class="" close onclick="removeItem(${index})">
-          X
-        </button>
+        <button class="close" onclick="removeItem(${index})">
+        X
+      </button>
         </div>
       `;
       mainList.appendChild(element);
@@ -67,7 +68,9 @@ function permanentlyRemoveHidden() {
 
 function addElement() {
 
-  let textNode = document.getElementById("myInput").value
+  let textNode = document.getElementById("myInput").value 
+
+  if (textNode.length == 0){return}
   
   state.toDoItems.push({
     title: textNode,
@@ -75,8 +78,13 @@ function addElement() {
   });
 
   render();
-
-
+ 
 }
 
+document.querySelector('#myInput').addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+   addElement()
+   document.getElementById("myInput").value = ""
+  }
+});
 

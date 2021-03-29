@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <title>To Do List</title>
   <link rel="apple-touch-icon" sizes="180x180" href="images/58685-apple-color-symbol-fire-shape-iphone-emoji.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/58685-apple-color-symbol-fire-shape-iphone-emoji.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/58685-apple-color-symbol-fire-shape-iphone-emoji.png">
@@ -12,25 +13,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <title>To Do List</title>
+
 </head>
 
 <body>
-  <h2>TO DO List</h2>
-  <input type="text" id="myInput" placeholder="Add Element"><br /><br>
-  <button onclick="addElement()">Add element</button><br /><br>
-
+  <div class="inner ">
+  <h1>TO DO List</h1>
+  <div class="utilCOnatiner">
+    <input type="text" id="myInput" placeholder="Add Element"><br /><br>
+    <button class="button" onclick="addElement()">ADD ELEMENT</button><br /><br>
+  </div>
   <br /><br>
   <section>
 
     <div id="mainList"></div>
 
   </section>
-  <button onclick="permanentlyRemoveHidden()">REMOVE HIDDEN</button>
+  <br>
+  <button class="button" onclick="permanentlyRemoveHidden()">REMOVE HIDDEN</button>
 
 
 
-
+</div>
 
   <script src="app.js">
 
